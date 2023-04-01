@@ -14,6 +14,8 @@
 		D57BA0C329D8B5CF00B4A6DA /* BullseyeGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BA0C229D8B5CF00B4A6DA /* BullseyeGameTests.swift */; };
 		D57BA0CD29D8B5CF00B4A6DA /* BullseyeGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BA0CC29D8B5CF00B4A6DA /* BullseyeGameUITests.swift */; };
 		D57BA0CF29D8B5CF00B4A6DA /* BullseyeGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BA0CE29D8B5CF00B4A6DA /* BullseyeGameUITestsLaunchTests.swift */; };
+		D57BA0DF29D8BA6700B4A6DA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BA0DE29D8BA6700B4A6DA /* Game.swift */; };
+		D57BA0E129D8BA7600B4A6DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BA0E029D8BA7600B4A6DA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		D57BA0C829D8B5CF00B4A6DA /* BullseyeGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57BA0CC29D8B5CF00B4A6DA /* BullseyeGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeGameUITests.swift; sourceTree = "<group>"; };
 		D57BA0CE29D8B5CF00B4A6DA /* BullseyeGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D57BA0DE29D8BA6700B4A6DA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D57BA0E029D8BA7600B4A6DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 		D57BA0DD29D8B8D900B4A6DA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D57BA0DE29D8BA6700B4A6DA /* Game.swift */,
+				D57BA0E029D8BA7600B4A6DA /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57BA0B429D8B5CE00B4A6DA /* ContentView.swift in Sources */,
+				D57BA0DF29D8BA6700B4A6DA /* Game.swift in Sources */,
 				D57BA0B229D8B5CE00B4A6DA /* BullseyeGameApp.swift in Sources */,
+				D57BA0E129D8BA7600B4A6DA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
