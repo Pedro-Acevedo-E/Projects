@@ -94,9 +94,9 @@
 		D57BA0B029D8B5CE00B4A6DA /* BullseyeGame */ = {
 			isa = PBXGroup;
 			children = (
-				D57BA0B129D8B5CE00B4A6DA /* BullseyeGameApp.swift */,
-				D57BA0B329D8B5CE00B4A6DA /* ContentView.swift */,
-				D57BA0B529D8B5CE00B4A6DA /* Assets.xcassets */,
+				D57BA0DD29D8B8D900B4A6DA /* Models */,
+				D57BA0DC29D8B8CE00B4A6DA /* Views */,
+				D57BA0DB29D8B8C300B4A6DA /* App */,
 				D57BA0B729D8B5CE00B4A6DA /* Preview Content */,
 			);
 			path = BullseyeGame;
@@ -125,6 +125,30 @@
 				D57BA0CE29D8B5CF00B4A6DA /* BullseyeGameUITestsLaunchTests.swift */,
 			);
 			path = BullseyeGameUITests;
+			sourceTree = "<group>";
+		};
+		D57BA0DB29D8B8C300B4A6DA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D57BA0B129D8B5CE00B4A6DA /* BullseyeGameApp.swift */,
+				D57BA0B529D8B5CE00B4A6DA /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D57BA0DC29D8B8CE00B4A6DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D57BA0B329D8B5CE00B4A6DA /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D57BA0DD29D8B8D900B4A6DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
