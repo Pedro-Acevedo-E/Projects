@@ -7,43 +7,18 @@
 
 import Foundation
 
-struct LeaderboardEntry {
-    let score: Int
-    let date: Date
+enum Constants {
+    enum Generel {
+        public static let strokeWidth = CGFloat(2.0)
+        public static let roundedViewLenght = CGFloat(56.0)
+        public static let roundRectViewWidth = CGFloat(68.0)
+        public static let roundRectViewWeight = CGFloat(56.0)
+        public static let roundRectCornerRadius = CGFloat(21.0)
+    }
+    enum Leaderboard {
+        public static let leaderboardScoreColWidth = CGFloat(50.0)
+        public static let leaderboardDateColWidth = CGFloat(170.0)
+        public static let leaderboardMaxRowWidth = CGFloat(480.0)
+    }
 }
 
-struct Game {
-    var target: Int = Int.random(in: 1...100)
-    var score: Int = 0
-    var round: Int = 1
-    var leaderboardEntries: [LeaderboardEntry] = []
-    
-    func points(sliderValue:Int) -> Int {
-        let difference = abs(target - sliderValue)
-        if difference == 0 {
-            return 200
-        }
-        if difference < 3 {
-            return 150 - difference
-        }
-        return 100 - difference
-    }
-    
-    mutating func startNewRound(points: Int){
-        addToLeaderboard(score: points)
-        score += points
-        round += 1
-        target = Int.random(in: 1...100)
-    }
-    
-    mutating func restart(){
-        score = 0
-        round = 1
-        target = Int.random(in: 1...100)
-    }
-    
-    mutating func addToLeaderboard(score: Int) {
-        leaderboardEntries.append(LeaderboardEntry(score: score, date: Date()))
-        leaderboardEntries.sort { $0.score > $1.score }
-    }
-}
